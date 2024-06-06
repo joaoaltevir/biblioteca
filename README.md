@@ -1,13 +1,13 @@
 #Sistema de Cadastro de Livros em JavaScript
 
 Este é um projeto simples de um sistema de cadastro de livros em uma biblioteca, desenvolvido em JavaScript. Ele permite que você adicione novos livros, visualize os livros cadastrados e os remova se necessário.
-Funcionalidades
+#Funcionalidades
 
     Adicionar novos livros: Insira as informações do livro, como título, autor, gênero e número de páginas, para adicioná-lo à biblioteca.
     Visualizar livros cadastrados: Visualize todos os livros atualmente cadastrados na biblioteca.
     Remover livros: Remova livros da biblioteca caso não sejam mais necessários.
 
-Como usar
+#Como usar
 
     Clone este repositório em sua máquina local:
 
