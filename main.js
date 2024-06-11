@@ -71,6 +71,8 @@ process.stdin.on("data", function (data) {
         for(let i = 0; i < biblioteca.length; i++){
           if(busca == biblioteca[i].nome){
             console.log(biblioteca[i])
+            opcao = 0;
+            console.log(mensagem);
           }
         }
     }
