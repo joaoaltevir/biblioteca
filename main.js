@@ -8,7 +8,8 @@ let livros = {
 let opcao = 0;
 let buscaRemover = "";
 let achou = 0;
-const mensagem = "Seja bem vindo ao menu da biblioteca! Escolha sua opção:\n\t1 - Adicionar livro\n\t2 - Remover Livro\n\t3 - Listar livros\n\t4 - Sair";
+let busca = "";
+const mensagem = "Seja bem vindo ao menu da biblioteca! Escolha sua opção:\n\t1 - Adicionar livro\n\t2 - Remover Livro\n\t3 - Listar livros\n\t5 - Pesquisar\n\t6 - Sair";
 console.log(mensagem);
 process.stdin.on("data", function (data) {
   let typein = data.toString().trim();
@@ -22,7 +23,9 @@ process.stdin.on("data", function (data) {
       console.log(biblioteca);
       opcao = 0;
       console.log(mensagem);
-    } else if (opcao == 4) {
+    } else if(opcao == 5){
+      console.log("Informe o nome do livro que está procurando:")
+    }else if (opcao == 6) {
       process.exit();
     }
   } else
@@ -63,5 +66,12 @@ process.stdin.on("data", function (data) {
           }
         }
         break;
+      case 5:
+        busca = typein;
+        for(let i = 0; i < biblioteca.length; i++){
+          if(busca == biblioteca[i].nome){
+            console.log(biblioteca[i])
+          }
+        }
     }
 });
